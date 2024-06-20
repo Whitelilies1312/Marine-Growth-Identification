@@ -1,0 +1,18 @@
+The commands run in command promt to run instance segmentation on yolov5 are as follows:
+
+ python segment/train.py --data seg-test.yaml --weights yolov5n-seg.pt --img 640 --epochs 500 --batch 8 --freeze 9 --hyp data/hyps/hyp.scratch-low.yaml
+ python segment/train.py --data seg-test.yaml --weights yolov5s-seg.pt --img 640 --epochs 500 --batch 8 --freeze 9 --hyp data/hyps/hyp.scratch-low.yaml
+ python segment/train.py --data seg-test.yaml --weights yolov5m-seg.pt --img 640 --epochs 500 --batch 8 --freeze 9 --hyp data/hyps/hyp.scratch-low.yaml
+ python segment/train.py --data seg-test.yaml --weights yolov5l-seg.pt --img 640 --epochs 500 --batch 8 --freeze 9 --hyp data/hyps/hyp.scratch-low.yaml
+ python segment/train.py --data seg-test.yaml --weights yolov5x-seg.pt --img 640 --epochs 500 --batch 8 --freeze 9 --hyp data/hyps/hyp.scratch-low.yaml
+ python segment/train.py --data seg-test.yaml --weights yolov5m-seg.pt --img 640 --epochs 500 --batch 16 --freeze 9 --hyp data/hyps/hyp.scratch-low.yaml
+ python segment/train.py --data seg-test.yaml --weights yolov5l-seg.pt --img 640 --epochs 500 --batch 16 --freeze 9 --hyp data/hyps/hyp.scratch-low.yaml
+ python segment/train.py --data seg-test.yaml --weights yolov5x-seg.pt --img 640 --epochs 500 --batch 16 --freeze 9 --hyp data/hyps/hyp.scratch-low.yaml
+ python segment/train.py --data seg-test.yaml --weights yolov5x-seg.pt --img 640 --epochs 500 --batch 8 --freeze 9 --hyp data/hyps/hyp.scratch-med.yaml
+ python segment/train.py --data seg-test.yaml --weights yolov5x-seg.pt --img 640 --epochs 500 --batch 8 --freeze 9 --hyp data/hyps/hyp.scratch-high.yaml
+ python segment/train.py --data seg-test.yaml --weights yolov5x-seg.pt --img 640 --epochs 750 --batch 8 --freeze 9 --hyp data/hyps/hyp.scratch-low.yaml
+ python segment/train.py --data seg-test.yaml --weights yolov5x-seg.pt --img 640 --epochs 750 --batch 8 --freeze 9 --hyp data/hyps/hyp.scratch-med.yaml
+ python segment/train.py --data seg-test.yaml --weights yolov5x-seg.pt --img 640 --epochs 750 --batch 8 --freeze 9 --hyp data/hyps/hyp.scratch-high.yaml
+
+The command used for prediction is as follows:
+ python segment/predict.py --weights "E:\Priya\Thesis\exp11\weights\best.pt" --source "E:\Priya\Thesis\Depth_identification_2\Frames"
